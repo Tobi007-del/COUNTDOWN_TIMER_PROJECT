@@ -100,6 +100,7 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
+  color: var(--clr-white);
 }
 
 h1 {
@@ -145,7 +146,9 @@ h4 {
   h4 {
     line-height: 1;
   }
-
+  .giveaway{
+    color: var(--clr-white)
+  }
   .gift-info p {
     color: var(--clr-grey-4);
     /* text-align: justify; */
@@ -198,13 +201,32 @@ Countdown Timer
 }
 
 .gift-img img {
-  border-radius: 7px;
+  border-radius: 50%;
+  background-color:rgb(31, 26, 26);
+  animation: example 12s ease-in-out 1s infinite normal;
+}
+
+@keyframes example {
+  0% {background-color:rgb(31, 26, 26)}
+  33%{background-color:rgb(90, 64, 64)}
+  66%{background-color:rgb(201, 240, 201)}
+  100%{background-color:rgb(235, 224, 224)}
 }
 
 .gift-info h3 {
+  font-size: 35px;
   text-transform: uppercase;
-  color: var(--clr-primary-3);
+  color: black;
+  animation: example_two 12s ease-in-out 1s infinite normal;
 }
+
+@keyframes example_two {
+  0% {color:rgb(31, 26, 26)}
+  33%{color:rgb(90, 64, 64)}
+  66%{color:rgb(201, 240, 201)}
+  100%{color:rgb(235, 224, 224)}
+}
+
 
 .gift-info p {
   color: var(--clr-grey-4);
@@ -242,12 +264,20 @@ Countdown Timer
   background: var(--clr-primary-2);
   color: var(--clr-white);
   margin-right: 1rem;
-  width: 5rem;
+  width: 6rem;
   height: 5rem;
   display: grid;
   place-items: center;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 50%;
+  animation: example_three 12s ease-in-out 1s infinite normal;
+}
+
+@keyframes example_three {
+  0% {background-color:rgb(31, 26, 26)}
+  33% {background-color:rgb(90, 64, 64)}
+  66% {background-color:rgb(201, 240, 201)}
+  100% {background-color:rgb(235, 224, 224)}
 }
 
 .deadline-format span {

@@ -34,7 +34,7 @@ const months = [
   // months are ZERO index based;
   const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
   // console.log(futureDate);
-  // let futureDate = new Date(2020, 3, 24, 11, 30, 0);
+  // let futureDate = new Date(2024, 3, 10, 11, 30, 0);
   
   const year = futureDate.getFullYear();
   
@@ -65,6 +65,7 @@ const months = [
     const oneDay = 24 * 60 * 60 * 1000;
     const oneHour = 60 * 60 * 1000;
     const oneMinute = 60 * 1000;
+    const oneSecond = 1000;
   
     // calculate all values
     let days = currentTime / oneDay;
@@ -74,7 +75,7 @@ const months = [
   
     let minutes = Math.floor((currentTime % oneHour) / oneMinute);
   
-    let seconds = Math.floor((currentTime % oneMinute) / 1000);
+    let seconds = Math.floor((currentTime % oneMinute) / oneSecond);
   
     // set values array
     const values = [days, hours, minutes, seconds];
