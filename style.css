@@ -203,7 +203,7 @@ Countdown Timer
 .gift-img img {
   border-radius: 50% 50% 50% 50%;
   background-color:rgb(31, 26, 26);
-  animation: example 12s ease-in-out 1s infinite normal;
+  animation: example 12s ease-in-out infinite normal;
 }
 
 @keyframes example {
@@ -217,7 +217,7 @@ Countdown Timer
   font-size: 35px;
   text-transform: uppercase;
   color: black;
-  animation: example_two 12s ease-in-out 1s infinite normal;
+  animation: example_two 12s ease-in-out infinite normal;
 }
 
 @keyframes example_two {
@@ -270,7 +270,7 @@ Countdown Timer
   place-items: center;
   text-align: center;
   border-radius: 50%;
-  animation: example_three 12s ease-in-out 1s infinite normal;
+  animation: example_three 12s ease-in-out infinite normal;
 }
 
 @keyframes example_three {
