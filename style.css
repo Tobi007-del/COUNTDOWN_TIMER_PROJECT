@@ -201,7 +201,7 @@ Countdown Timer
 }
 
 .gift-img img {
-  border-radius: 50%;
+  border-radius: 50% 50% 50% 50%;
   background-color:rgb(31, 26, 26);
   animation: example 12s ease-in-out 1s infinite normal;
 }
