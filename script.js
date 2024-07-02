@@ -28,7 +28,7 @@ const months = [
   const items = document.querySelectorAll('.deadline-format h4');
   
   let tempDate = new Date();
-  let tempYear = tempDate.getFullYear();
+  let tempYear = tempDate.getFullYear(); 
   let tempMonth = tempDate.getMonth();
   let tempDay = tempDate.getDate();
   // months are ZERO index based;
@@ -71,7 +71,7 @@ const months = [
     let days = currentTime / oneDay;
     days = Math.floor(days);
   
-    let hours = Math.floor((currentTime % oneDay) / oneHour);
+    let hours = Math.floor((currentTime % oneDay) / oneHour); 
   
     let minutes = Math.floor((currentTime % oneHour) / oneMinute);
   

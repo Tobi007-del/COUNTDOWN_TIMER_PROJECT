@@ -68,8 +68,9 @@ Global Styles
   box-sizing: border-box;
 }
 body {
+  background-color: white;
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-8);
+/* ?background: var(--clr-grey-8); */
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -147,7 +148,7 @@ h4 {
     line-height: 1;
   }
   .giveaway{
-    color: var(--clr-white)
+    color: var(--clr-black)
   }
   .gift-info p {
     color: var(--clr-grey-4);
@@ -231,6 +232,10 @@ Countdown Timer
 .gift-info p {
   color: var(--clr-grey-4);
   /* text-align: justify; */
+}
+
+.giveaway{
+  color: var(--clr-black);
 }
 
 .date {
