@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     border-radius: .1em;
+    perspective: 100px;
 }
 
 .top, .bottom, 
@@ -26,6 +27,7 @@ body {
     line-height: 1;
     padding: .25em;
     overflow: hidden;
+    transform-style: preserve-3d;
 }
 
 .top,
