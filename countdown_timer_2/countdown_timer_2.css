@@ -9,6 +9,8 @@
 body {
     background-color: #f2f1ed;
     color: #de4848;
+    align-content: center;
+    justify-items: center;
 }
 
 .flip-card {
@@ -75,17 +77,12 @@ body {
     }
 }
 
-.container {
-    display: flex;
-    gap: .5em;
-    justify-content: center;
-}
-
 .container-segment {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     gap: .1em;
+    margin-inline: .15rem;
 }
 
 .segment {
