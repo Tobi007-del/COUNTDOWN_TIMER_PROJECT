@@ -20,8 +20,7 @@ Variables
   /* primary/main color */
   --clr-primary-5: #49a6e9;
   /* lighter shades of primary color */
-  --clr-primary-6: #6ebef7
-  --clr-primary-7: #8bcbf9; 
+  --clr-primary-6: #6ebef7 --clr-primary-7: #8bcbf9;
   --clr-primary-8: #a5d5f8;
   --clr-primary-9: #c5e5fc;
   --clr-primary-10: #ebf7ff;
@@ -70,7 +69,7 @@ Global Styles
 body {
   background-color: white;
   font-family: var(--ff-secondary);
-/* ?background: var(--clr-grey-8); */
+  /* ?background: var(--clr-grey-8); */
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -120,7 +119,6 @@ h4 {
   font-size: 0.875rem;
 }
 
-
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -147,14 +145,13 @@ h4 {
   h4 {
     line-height: 1;
   }
-  .giveaway{
-    color: var(--clr-black)
+  .giveaway {
+    color: var(--clr-black);
   }
   .gift-info p {
     color: var(--clr-grey-4);
     /* text-align: justify; */
   }
-  
 }
 /*  global classes */
 
@@ -203,15 +200,23 @@ Countdown Timer
 
 .gift-img img {
   border-radius: 50% 50% 50% 50%;
-  background-color:rgb(31, 26, 26);
+  background-color: rgb(31, 26, 26);
   animation: example 12s ease-in-out infinite normal;
 }
 
 @keyframes example {
-  0% {background-color:rgb(31, 26, 26)}
-  33%{background-color:rgb(90, 64, 64)}
-  66%{background-color:rgb(201, 240, 201)}
-  100%{background-color:rgb(235, 224, 224)}
+  0% {
+    background-color: rgb(31, 26, 26);
+  }
+  33% {
+    background-color: rgb(90, 64, 64);
+  }
+  66% {
+    background-color: rgb(201, 240, 201);
+  }
+  100% {
+    background-color: rgb(235, 224, 224);
+  }
 }
 
 .gift-info h3 {
@@ -222,19 +227,26 @@ Countdown Timer
 }
 
 @keyframes example_two {
-  0% {color:rgb(31, 26, 26)}
-  33%{color:rgb(90, 64, 64)}
-  66%{color:rgb(201, 240, 201)}
-  100%{color:rgb(235, 224, 224)}
+  0% {
+    color: rgb(31, 26, 26);
+  }
+  33% {
+    color: rgb(90, 64, 64);
+  }
+  66% {
+    color: rgb(201, 240, 201);
+  }
+  100% {
+    color: rgb(235, 224, 224);
+  }
 }
-
 
 .gift-info p {
   color: var(--clr-grey-4);
   /* text-align: justify; */
 }
 
-.giveaway{
+.giveaway {
   color: var(--clr-black);
 }
 
@@ -279,10 +291,18 @@ Countdown Timer
 }
 
 @keyframes example_three {
-  0% {background-color:rgb(31, 26, 26)}
-  33% {background-color:rgb(90, 64, 64)}
-  66% {background-color:rgb(201, 240, 201)}
-  100% {background-color:rgb(235, 224, 224)}
+  0% {
+    background-color: rgb(31, 26, 26);
+  }
+  33% {
+    background-color: rgb(90, 64, 64);
+  }
+  66% {
+    background-color: rgb(201, 240, 201);
+  }
+  100% {
+    background-color: rgb(235, 224, 224);
+  }
 }
 
 .deadline-format span {
