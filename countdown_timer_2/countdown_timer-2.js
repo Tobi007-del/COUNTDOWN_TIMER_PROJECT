@@ -1,6 +1,6 @@
 const flipCard = document.querySelector(".flip-card");
 
-const countToDate = new Date("2025-10-11");
+const countToDate = new Date("2026-1-1");
 let previousTimeBetweenDates;
 setInterval(() => {
   const currentDate = new Date();
@@ -23,7 +23,7 @@ function flipAllCards(time) {
   flip(document.querySelector("[data-days-hundreds]"), Math.floor(days / 100));
   flip(
     document.querySelector("[data-days-tens]"),
-    Math.floor((days % 100) / 10),
+    Math.floor((days % 100) / 10)
   );
   flip(document.querySelector("[data-days-ones]"), days % 10);
   flip(document.querySelector("[data-hours-tens]"), Math.floor(hours / 10));
@@ -50,12 +50,11 @@ function flip(flipCard, newNumber) {
   topFlip.textContent = startNumber;
   bottomFlip.textContent = newNumber;
 
-  topFlip.addEventListener("animationstart", () => {
-    topHalf.textContent = newNumber;
-  });
-  topFlip.addEventListener("animationend", () => {
-    topFlip.remove();
-  });
+  topFlip.addEventListener(
+    "animationstart",
+    () => (topHalf.textContent = newNumber)
+  );
+  topFlip.addEventListener("animationend", () => topFlip.remove());
   bottomFlip.addEventListener("animationend", () => {
     bottomHalf.textContent = newNumber;
     bottomFlip.remove();
