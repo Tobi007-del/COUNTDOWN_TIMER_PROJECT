@@ -1,6 +1,6 @@
 const flipCard = document.querySelector(".flip-card");
 
-const countToDate = new Date("2026-1-1");
+const countToDate = new Date("2026-6-30");
 let previousTimeBetweenDates;
 setInterval(() => {
   const currentDate = new Date();
